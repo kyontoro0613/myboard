@@ -1,0 +1,9 @@
+<%= form_for(@user, url:profile_path, method: :put) do |f| %>
+<div class="field">
+<%= f.label :name %>
+<%= f.text_field :name %>
+</div>
+      <%=f.label :avatar,"ユーザー画像" %>
+      <%= f.file_field :avatar %>
+     <%= f.submit %>
+    <% end %>
